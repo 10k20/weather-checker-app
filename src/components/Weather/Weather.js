@@ -5,6 +5,7 @@ const Weather = (props) => (
         { props.city &&
             <div className='weather-data'>
                 <div className='weather-data_item'>
+                    <div className='weather-value'>{props.weather}</div>
                     <div className='string'>
                         <p className='variable'>Place:</p><p className='value'>{props.city}</p>
                     </div>

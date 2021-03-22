@@ -14,6 +14,7 @@ class App extends React.Component {
     sunrise: null,
     sunset: null,
     feelsLike: null,
+    weather: null,
     error: ''
   };
 
@@ -38,6 +39,7 @@ class App extends React.Component {
         temp: data.main.temp,
         feelsLike: data.main.feels_like,
         pressure: data.main.pressure,
+        weather: data.weather[0].main,
         // sunset: sunsetDate,
         error: ''
       });
@@ -49,6 +51,7 @@ class App extends React.Component {
         sunrise: null,
         // sunset: null,
         feelsLike: null,
+        weather: null,
         error: 'You have not typed city'
       });
     }
@@ -65,6 +68,7 @@ class App extends React.Component {
           temp={this.state.temp}
           feelsLike={this.state.feelsLike}
           pressure={this.state.pressure}
+          weather={this.state.weather}
           // sunset={this.state.sunset}
           error={this.state.error}
         />
