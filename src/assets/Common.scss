@@ -1,6 +1,7 @@
 @import './Fonts.scss';
 @import './../components/Form/Form.scss';
 @import './../components/Weather/WeatherData.scss';
+@import './../components/Info/Info.scss';
 
 
 
@@ -18,8 +19,25 @@ body {
     color: #1d1d1f;
 }
 
-
-  
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.app-container {
+    width: 50rem;
+    height: 30rem;
+    margin: auto auto;
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    position: relative;
 }
