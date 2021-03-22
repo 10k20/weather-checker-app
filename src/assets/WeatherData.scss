@@ -1,0 +1,26 @@
+.weather {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    &-data {
+        width: 40%;
+        &_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid #d2d2d7;
+            .string {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+                p {
+                    margin: 0;
+                }
+                .variable {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

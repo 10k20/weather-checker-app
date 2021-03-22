@@ -27,10 +27,10 @@ class App extends React.Component {
       const data = await API_URL.json();
       console.log(data)
 
-      var sunset = data.sys.sunset;
-      var date = new Date();
-      date.setTime(sunset);
-      var sunsetDate = date.getHours() + ':' + date.getMinutes();
+      // var sunset = data.sys.sunset;
+      // var date = new Date();
+      // date.setTime(sunset);
+      // var sunsetDate = date.getHours() + ':' + date.getMinutes();
 
       this.setState({
         city: data.name,
@@ -38,7 +38,7 @@ class App extends React.Component {
         temp: data.main.temp,
         feelsLike: data.main.feels_like,
         pressure: data.main.pressure,
-        sunset: sunsetDate,
+        // sunset: sunsetDate,
         error: ''
       });
     } else {
@@ -47,7 +47,7 @@ class App extends React.Component {
         country: null,
         temp: null,
         sunrise: null,
-        sunset: null,
+        // sunset: null,
         feelsLike: null,
         error: 'You have not typed city'
       });
@@ -65,7 +65,7 @@ class App extends React.Component {
           temp={this.state.temp}
           feelsLike={this.state.feelsLike}
           pressure={this.state.pressure}
-          sunset={this.state.sunset}
+          // sunset={this.state.sunset}
           error={this.state.error}
         />
       </div>

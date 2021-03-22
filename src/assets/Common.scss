@@ -1,0 +1,25 @@
+@import './Fonts.scss';
+@import './Form.scss';
+@import './WeatherData.scss';
+
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    background: url(./img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #1d1d1f;
+}
+
+
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

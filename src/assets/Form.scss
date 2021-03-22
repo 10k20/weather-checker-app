@@ -1,0 +1,60 @@
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.app-container {
+    width: 50rem;
+    height: 30rem;
+    margin: auto auto;
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    position: relative;
+    .info {
+        &-title {
+            margin: 0 0 1.25rem 0;
+        }
+    }
+    .form {
+        display: flex;
+        justify-content: center;
+        margin-top: 3.5rem;
+        
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+            
+            input {
+                background-color: transparent !important;
+                border: none;
+                outline: none;
+                width: 50%;
+                border-bottom: 1px solid #d2d2d7;
+                padding: 0.25rem 0;
+            }
+            input:-internal-autofill-selected {
+                background-color: transparent !important;
+            }
+            button {
+                background: #0071e3;
+                border: none;
+                color: #fff;
+                outline: none;
+                padding: 4px 11px;
+                border-radius: 1rem;
+                margin-left: 1rem;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #0077ED;;
+            }
+        }
+    }
+}
