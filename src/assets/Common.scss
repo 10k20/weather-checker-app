@@ -1,7 +1,4 @@
 @import './Fonts.scss';
-@import './../components/Form/Form.scss';
-@import './../components/Weather/WeatherData.scss';
-@import './../components/Info/Info.scss';
 
 
 
@@ -14,8 +11,7 @@ body {
     background: url(./img/background.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    max-width:100%;
     color: #1d1d1f;
 }
 
@@ -32,12 +28,21 @@ code {
 }
 
 .app-container {
-    width: 50rem;
-    height: 30rem;
-    margin: auto auto;
-    padding: 1.5rem 0;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 1.5rem;
-    position: relative;
+    width: 100%;
+    .weather-app {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &-wrapper {
+            width: 50rem;
+            height: 30rem;
+            margin: auto auto;
+            padding: 1.5rem 0;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 1.5rem;
+            position: relative;
+        }
+    }
 }

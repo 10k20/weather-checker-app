@@ -3,6 +3,8 @@ import Info from './components/Info/Info';
 import Form from './components/Form/Form';
 import Weather from './components/Weather/Weather';
 
+import Footer from './components/Footer/Footer';
+
 const API_KEY = 'd1812ab7b9819ec4f4e4bbd3f4a04ded';
 
 class App extends React.Component {
@@ -60,18 +62,23 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <Info />
-        <Form weatherMethod={this.getWeather}/>
-        <Weather
-          city={this.state.city}
-          country={this.state.country}
-          temp={this.state.temp}
-          feelsLike={this.state.feelsLike}
-          pressure={this.state.pressure}
-          weather={this.state.weather}
-          // sunset={this.state.sunset}
-          error={this.state.error}
-        />
+        <div className="weather-app">
+          <div className="weather-app-wrapper">
+            <Info />
+            <Form weatherMethod={this.getWeather}/>
+            <Weather
+              city={this.state.city}
+              country={this.state.country}
+              temp={this.state.temp}
+              feelsLike={this.state.feelsLike}
+              pressure={this.state.pressure}
+              weather={this.state.weather}
+              // sunset={this.state.sunset}
+              error={this.state.error}
+            />
+          </div>
+        </div>
+        <Footer />
       </div>
     );
   };

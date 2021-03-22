@@ -1,4 +1,5 @@
 import React from 'react';
+import './WeatherData.scss';
 
 const Weather = (props) => (
     <div className="weather">

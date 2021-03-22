@@ -1,4 +1,5 @@
 import React from 'react';
+import './Info.scss';
 
 const Info = () => (
     <div className="info">
