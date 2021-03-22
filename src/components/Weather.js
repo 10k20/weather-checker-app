@@ -22,7 +22,7 @@ const Weather = (props) => (
                 </div>
                 <div className='weather-data_item'>
                     <div className='string'>
-                        <p className='variable'>Pressure:</p><p className='value'>{props.pressure}</p>
+                        <p className='variable'>Pressure:</p><p className='value'>{props.pressure} mbap</p>
                     </div>
                 </div>
                 {/* <p className='weather-data_item'>Sunset: {props.sunset}</p> */}
